@@ -318,7 +318,7 @@
           date1.getDate() === date2.getDate();
       }
 
-      document.getElementById('button1').addEventListener('click', function () {
+       document.getElementById('button1').addEventListener('click', function () {
         const element = document.getElementById('calendarPreview');
     
         // Apply styles for centering content
@@ -333,11 +333,10 @@
                 unit: 'mm',
                 format: [150, 100],
                 orientation: 'landscape',
-                justifyFileContent: 'center',
-            
+                justifyFileContent: 'center', // This won't work, instead, apply styling directly to your content
             },
         };
-        
+    
         html2pdf(element, options);
     });
     
